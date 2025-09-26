@@ -1,8 +1,18 @@
 import React, { useRef } from "react";
 import { FaPlus } from "react-icons/fa";
 
-const FaqItem = ({ item, onClick, isOpen }) => {
-  const answerRef = useRef(null);
+type FaqItemProps = {
+  item: {
+    id: string | number;
+    question: string;
+    answer: string;
+  };
+  onClick: (id: string | number) => void;
+  isOpen: boolean;
+};
+
+const FaqItem: React.FC<FaqItemProps> = ({ item, onClick, isOpen }) => {
+  const answerRef = useRef<HTMLDivElement | null>(null);
   return (
     <div
       className=" border-b border-black-100 last:border-none transition-colors duration-300 hover:bg-gradient-to-r hover:from-gray-600/50 hover:to-transparent hover:rounded-xl"

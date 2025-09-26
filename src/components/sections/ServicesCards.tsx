@@ -1,4 +1,5 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 import config from "@/data/config";
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -91,7 +92,7 @@ const ServicesCards = () => {
   return (
     <div className="w-full px-5 md:px-20 py-5 md:py-20" ref={cardsRef}>
       <div className="mx-auto grid-3-cols">
-        {config.servicesData.map(({ imgPath, title, desc }, index) => (
+        {config.servicesData.map(({ imgPath, title, desc }) => (
           <div
             key={title}
             ref={addToRefs}

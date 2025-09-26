@@ -1,8 +1,10 @@
 "use client";
+/* eslint-disable @next/next/no-img-element */
 import config from "@/data/config";
 import React, { useState, useEffect, useRef } from "react";
 import Menu from "./Menu";
 import gsap from "gsap";
+import Link from "next/link";
 
 const Nav: React.FC = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -17,7 +19,13 @@ const Nav: React.FC = () => {
     //estado inicial
     gsap.set(headerRef.current, { y: -100, opacity: 0 });
     gsap.set(logoRef.current, { opacity: 0, scale: 0.8 });
-    gsap.set(navItemsRef.current?.children, { y: -20, opacity: 0 });
+
+    if (navItemsRef.current) {
+      gsap.set(Array.from(navItemsRef.current?.children), {
+        y: -20,
+        opacity: 0,
+      });
+    }
 
     //animação de elementos
 
@@ -36,7 +44,7 @@ const Nav: React.FC = () => {
         "-=0.3"
       )
       .to(
-        navItemsRef.current?.children,
+        Array.from(navItemsRef.current?.children || []),
         {
           y: 0,
           opacity: 1,
@@ -82,7 +90,7 @@ const Nav: React.FC = () => {
 
       // Adicionar efeito de fundo conforme a rolagem
       if (headerRef.current) {
-        const opacity = Math.min(currentScrollState / 200, 0.9);
+        //const opacity = Math.min(currentScrollState / 200, 0.9);
         headerRef.current.style.backgroundColor = `transparent`;
 
         // Reduzir altura da barra em rolagens maiores
@@ -117,9 +125,9 @@ const Nav: React.FC = () => {
         } transition-[var(--transition)]`}
     >
       <div className="flex items-center justify-between relative w-full text-white-50">
-        <a ref={logoRef} href="/">
+        <Link ref={logoRef} href="/">
           <img src="/logo2.png" alt="logo" width="90px" height="90px" />
-        </a>
+        </Link>
         <div className="hidden items-center md:flex">
           <ol
             ref={navItemsRef}
@@ -131,9 +139,9 @@ const Nav: React.FC = () => {
                   key={i}
                   className="lg:mx-[7px] relative text-fz-xs lg:text-fz-xl font-bold text-white-50"
                 >
-                  <a href={url} className="pr-2.5">
+                  <Link href={url} className="pr-2.5">
                     {name}
-                  </a>
+                  </Link>
                 </li>
               ))}
           </ol>

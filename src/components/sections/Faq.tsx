@@ -4,16 +4,17 @@ import React, { useState } from "react";
 import FaqItem from "../FaqItem";
 import TitleHeader from "../TitleHeader";
 
-interface FAQ {
-  question: string;
-  answer: string;
-}
+// interface FAQ {
+//   id: number;
+//   question: string;
+//   answer: string;
+// }
 
 const Faq: React.FC = () => {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState<string | number | null>(null);
   const [expandAll, setExpandAll] = useState(false);
 
-  const toggleItem = (id) => {
+  const toggleItem = (id: string | number) => {
     if (expandAll) {
       setExpandAll(false);
     }
@@ -25,10 +26,10 @@ const Faq: React.FC = () => {
     });
   };
 
-  const toggleExpandAll = () => {
-    setExpandAll((prev) => !prev);
-    setSelected(null);
-  };
+  // const toggleExpandAll = () => {
+  //   setExpandAll((prev) => !prev);
+  //   setSelected(null);
+  // };
 
   return (
     <section

@@ -174,15 +174,15 @@ const config: Config ={
       mentions: "Servidora Publica",
       review:
         "Fui muito bem atendida, estava insegura em relação a antecipação do FGTS, mas o atendente a Bruno me enviou toda a documentação da empresa. Dinheiro na conta em 1h.",
-      imgPath: "https://lh3.googleusercontent.com/a/ACg8ocJQy93D8C5J7gtuYhwrDdgLpDgi65eZCNYy6we8svZSeGXCpOQ5=s360-c-no"
+      imgPath: "https://media.gettyimages.com/id/1384357158/pt/foto/portrait-of-a-beautiful-mexican-woman.webp?s=1024x1024&w=gi&k=20&c=G0zLRwRw57jgD_om7GFi2XP3DSgUYHGcyNtTdeeubnk="
     },
     {
       id: 2,
-      name: "Wanglas Braz",
-      mentions: "Servidora Publica",
+      name: "Marcio",
+      mentions: "Servidor Publico Federal",
       review:
-        "Consegui empréstimo do FGTS em questão de minutos, estão de parabéns ótimo serviço, super indico.",
-      imgPath: "https://lh3.googleusercontent.com/a/ACg8ocJQy93D8C5J7gtuYhwrDdgLpDgi65eZCNYy6we8svZSeGXCpOQ5=s360-c-no"
+        "Melhor empresa para os momentos de necessidade. Ágil, transparente e eficiente. Muito diferenciada das outras empresas do ramo e muito melhor do que fazer diretamente nos bancos.",
+      imgPath: "/test1.jpg"
     },
     {
       id: 3,
@@ -190,7 +190,7 @@ const config: Config ={
       mentions: "Servidor Publico",
       review:
         "Ótimo atendimento super prestativo atencioso e rápido",
-      imgPath: "https://lh3.googleusercontent.com/a/ACg8ocJQy93D8C5J7gtuYhwrDdgLpDgi65eZCNYy6we8svZSeGXCpOQ5=s360-c-no"
+      imgPath: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       id: 4,
@@ -198,23 +198,23 @@ const config: Config ={
       mentions: "Aposentado",
       review:
         "Empresa bem localizada com atendimento excelente.",
-      imgPath: "https://lh3.googleusercontent.com/a/ACg8ocJQy93D8C5J7gtuYhwrDdgLpDgi65eZCNYy6we8svZSeGXCpOQ5=s360-c-no"
+      imgPath: "https://media.istockphoto.com/id/1135152361/pt/foto/senior-man-working-out-for-good-health.jpg?s=612x612&w=0&k=20&c=HrqfKxYE3fbfW_aUCGwZgTsAcxGDqtMgCLocQYqgKZE="
     },
     {
       id: 5,
       name: "Joao Araujo",
       mentions: "@joao_araujo",
       review:
-        "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website.",
-      imgPath: "https://lh3.googleusercontent.com/a/ACg8ocJQy93D8C5J7gtuYhwrDdgLpDgi65eZCNYy6we8svZSeGXCpOQ5=s360-c-no"
+        "Melhor empresa para os momentos de necessidade. Ágil, transparente e eficiente. Muito diferenciada das outras empresas do ramo e muito melhor do que fazer diretamente nos bancos.",
+      imgPath: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
       id: 6,
       name: "Joao Araujo",
       mentions: "@joao_araujo",
       review:
-        "I can’t say enough good things about Adrian. He was able to take our complex project requirements and turn them into a seamless, functional website.He was able to take our complex project requirements and turn them into a seamless,",
-      imgPath: "https://lh3.googleusercontent.com/a/ACg8ocJQy93D8C5J7gtuYhwrDdgLpDgi65eZCNYy6we8svZSeGXCpOQ5=s360-c-no"
+        "Melhor empresa para os momentos de necessidade. Ágil, transparente e eficiente. Muito diferenciada das outras empresas do ramo e muito melhor do que fazer diretamente nos bancos.",
+      imgPath: "https://plus.unsplash.com/premium_photo-1669703777437-27602d656c27?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     }
   ],
 
@@ -223,7 +223,7 @@ const config: Config ={
 export const counterItems = [
   {value: 6, suffix: "+", label: "Anos no mercado"},
   {value: 20000, suffix: "+", label: "Clientes satisfeitos"},
-  {value: 10, suffix: "M+", label: "Contratos fechados"},
+  {value: 10, suffix: "M+", label: "Em Contratos fechados"},
   {value: 100, suffix: "%", label: "Digital e seguro"},
 ]
 

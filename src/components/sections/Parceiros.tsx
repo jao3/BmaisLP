@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import config from "@/data/config";
 import React from "react";
 

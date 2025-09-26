@@ -1,5 +1,5 @@
 "use client";
-
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useRef } from "react";
 import { FaWhatsapp } from "react-icons/fa";
 import AnimateCounter from "../AnimateCounter";
@@ -30,12 +30,18 @@ const Hero: React.FC = () => {
     const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
     // Definindo o estado inicial dos elementos
-    gsap.set(textRef.current?.children, { y: 50, opacity: 0 });
+    if (textRef.current) {
+      gsap.set(textRef.current?.children, { y: 50, opacity: 0 });
+    }
+
     gsap.set(imageRef.current, { scale: 0.8, opacity: 0 });
-    gsap.set(buttonsRef.current?.children, { y: 20, opacity: 0 });
+
+    if (buttonsRef.current) {
+      gsap.set(buttonsRef.current?.children, { y: 20, opacity: 0 });
+    }
 
     // Animando os elementos
-    tl.to(textRef.current?.children, {
+    tl.to(Array(textRef.current?.children), {
       y: 0,
       opacity: 1,
       duration: 0.8,
@@ -51,7 +57,7 @@ const Hero: React.FC = () => {
         "-=0.4"
       )
       .to(
-        buttonsRef.current?.children,
+        Array(buttonsRef.current?.children),
         {
           y: 0,
           opacity: 1,

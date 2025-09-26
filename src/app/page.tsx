@@ -1,4 +1,3 @@
-import AnimateCounter from "@/components/AnimateCounter";
 import Nav from "@/components/Nav";
 import Faq from "@/components/sections/Faq";
 import Footer from "@/components/sections/Footer";
@@ -8,7 +7,6 @@ import Products from "@/components/sections/Products";
 import ServicesCards from "@/components/sections/ServicesCards";
 import Testimonials from "@/components/sections/Testimonials";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import Image from "next/image";
 
 export default function Home() {
   return (

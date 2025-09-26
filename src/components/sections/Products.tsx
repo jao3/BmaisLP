@@ -6,7 +6,6 @@ import {
   Wallet,
   ChevronLeft,
   ChevronRight,
-  CarFront,
 } from "lucide-react";
 import TitleHeader from "../TitleHeader";
 import gsap from "gsap";
@@ -20,13 +19,13 @@ if (typeof window !== "undefined") {
 export default function Products() {
   const [filtroAtivo, setFiltroAtivo] = useState("Todos");
   const [currentSlide, setCurrentSlide] = useState(0);
-  const carrosselRef = useRef(null);
+  const carrosselRef = useRef<HTMLDivElement | null>(null);
   const [numVisible, setNumVisible] = useState(3);
 
   // Refs para animação
   const sectionRef = useRef(null);
   const titleRef = useRef(null);
-  const filtrosRef = useRef(null);
+  const filtrosRef = useRef<HTMLDivElement | null>(null);
   const cardsRef = useRef([]);
 
   const servicos = [
@@ -163,26 +162,29 @@ export default function Products() {
     );
 
     // Animação para os filtros
-    gsap.fromTo(
-      filtrosRef.current.children,
-      {
-        y: 30,
-        opacity: 0,
-      },
-      {
-        y: 0,
-        opacity: 1,
-        duration: 0.6,
-        stagger: 0.1,
-        ease: "power2.out",
-        delay: 0.3,
-        scrollTrigger: {
-          trigger: filtrosRef.current,
-          start: "top bottom-=80",
-          toggleActions: "play none none none",
+
+    if (filtrosRef.current) {
+      gsap.fromTo(
+        filtrosRef.current.children,
+        {
+          y: 30,
+          opacity: 0,
         },
-      }
-    );
+        {
+          y: 0,
+          opacity: 1,
+          duration: 0.6,
+          stagger: 0.1,
+          ease: "power2.out",
+          delay: 0.3,
+          scrollTrigger: {
+            trigger: filtrosRef.current,
+            start: "top bottom-=80",
+            toggleActions: "play none none none",
+          },
+        }
+      );
+    }
 
     // Limpar animações
     return () => {
