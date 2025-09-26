@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🌐 BMais Financeira – Landing Page
 
-## Getting Started
+Uma landing page moderna e responsiva desenvolvida para a BMais Financeira, destacando seus principais serviços e facilitando o contato com clientes.
 
-First, run the development server:
+👉 Acesse o projeto online
 
-```bash
+✨ Destaques do projeto
+
+🔥 Design moderno e responsivo – funciona em qualquer dispositivo
+
+⚡ Performance otimizada – carregamento rápido com Vercel
+
+🎯 Foco em conversão – chamadas de ação bem posicionadas e formulários intuitivos
+
+💬 Integração com WhatsApp – contato rápido e prático
+
+📊 Estrutura escalável – pronto para receber novas seções e melhorias
+
+🛠 Tecnologias
+
+Next.js / React – base do projeto
+
+TypeScript – tipagem para mais segurança e manutenção
+
+TailwindCSS – estilização rápida e responsiva
+
+Vercel – deploy e hospedagem
+
+🚀 Como rodar localmente
+# Clone o repositório
+git clone https://github.com/SEU_USUARIO/bmais-lp.git
+
+# Acesse a pasta
+cd bmais-lp
+
+# Instale as dependências
+npm install
+
+# Rode em modo dev
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Acesse em http://localhost:3000/.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+📸 Preview
 
-## Learn More
+👨‍💻 Sobre o projeto
 
-To learn more about Next.js, take a look at the following resources:
+Este projeto foi desenvolvido para exercitar habilidades em React/Next.js, criar um layout profissional de landing page e aplicar boas práticas de design responsivo e otimização de performance.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+👉 Veja o site em produção
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+👉 Veja outros projetos no meu portfólio
