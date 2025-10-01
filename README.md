@@ -2,7 +2,7 @@
 
 Uma landing page moderna e responsiva desenvolvida para a BMais Financeira, destacando seus principais serviços e facilitando o contato com clientes.
 
-👉 Acesse o projeto online
+<a href:" bmais-lp.vercel.app">👉 Acesse o projeto online</a>
 
 ✨ Destaques do projeto
 
